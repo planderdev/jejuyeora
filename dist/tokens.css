@@ -6,7 +6,6 @@
 *,*::before,*::after{box-sizing:border-box}body{margin:0;font-family:var(--jy-font);font-size:15px;line-height:1.5;color:var(--jy-text);background:var(--jy-bg);-webkit-font-smoothing:antialiased}button,input,textarea,select{font:inherit}button,a,input,textarea,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}button:disabled{cursor:not-allowed}a{color:inherit;text-decoration:none}button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--jy-primary-text);outline-offset:4px}button{touch-action:manipulation}svg{display:inline-block;vertical-align:middle;flex-shrink:0}::selection{background:var(--jy-primary);color:#fff}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 
-/* Primitive palettes and typography follow TDS values; Primary is Jejuyeora. */
 :root {
   --jy-primary-50: #f4f1ff;
   --jy-primary-100: #e9e3ff;

@@ -1,6 +1,6 @@
 # 제주여라 모바일 디자인 시스템
 
-TDS Mobile의 파운데이션·컴포넌트·유틸리티 **전체 63개 문서 항목**과 LINE LDSG 공개 문서 41개의 대조 결과을 기준으로 만든 제주여라용 문서와 독립적인 HTML/CSS/JavaScript UI 구현입니다.
+제주여라 모바일 앱을 위한 디자인 토큰과 HTML/CSS/JavaScript UI 개발 키트입니다.
 
 - Primary: `#634BFF`
 - 기본 다크 배경: `#161525` / 라이트 모드 제공
@@ -71,7 +71,7 @@ useBottomSheet({
 
 ### 토큰
 
-`tokens.css`는 프리미티브 팔레트, 모드별 시맨틱 컬러, 간격, radius, rem 기반 타이포그래피 토큰을 포함합니다. `tokens.json`은 팔레트·언어·20개 원문 타이포그래피 토큰·iOS 및 Android 큰 글자 수치의 기계 판독용 데이터입니다.
+`tokens.css`는 프리미티브 팔레트, 모드별 시맨틱 컬러, 간격, radius, rem 기반 타이포그래피 토큰을 포함합니다. `tokens.json`은 팔레트·언어·20개 타이포그래피 토큰·iOS 및 Android 큰 글자 수치의 기계 판독용 데이터입니다.
 
 ```css
 .my-card {
@@ -100,7 +100,6 @@ useBottomSheet({
 - 모든 UI 아이콘은 Lucide Static 1.75.0(ISC)의 실제 SVG 노드를 자체 호스팅합니다. `icons/LUCIDE-LICENSE.txt`를 배포 시 유지하세요.
 - 셀렉트는 네이티브 선택 동작을 유지하며 기본 화살표를 제거하고 Lucide ChevronDown으로 표시합니다.
 - 페이지별 아이브로우를 제거하고, 메뉴 이동 후 사이드바 스크롤 위치를 보존합니다.
-- `reference-audit.json`은 LINE 공개 문서 41개 각각의 반영 위치와 판단, 검토한 절 제목을 담습니다. LINE 전용 LIFF View는 적용하지 않습니다.
 
 추가 UI 스타일에는 `extensions.css`가 필요합니다. `components.js`는 `components-extra.js`와 `lucide-icons.js`를 가져오므로 세 파일을 함께 유지하세요. 이미지/영상 예제는 `media/`를 함께 복사하세요. SVG는 예시 일러스트이며 실제 여행지 사진은 아닙니다.
 
@@ -115,16 +114,10 @@ openDrawer({ lang: 'ko', profile: true });
 
 비디오 플레이어는 Lucide 컨트롤과 HTML5 `<video>`를 사용합니다. 예제 영상은 MDN의 CC0 flower.mp4이며 출처는 `media/MEDIA-CREDITS.txt`에 있습니다. 재생·탐색·음소거·자막과 Fullscreen API를 제공합니다. 플랫폼이 Fullscreen API를 제한하면 해당 앱의 네이티브 전체 화면 처리로 연결하세요.
 
-## 포함 범위와 참조
+## 포함 범위
 
-`catalog.json`에 파운데이션 2개, 컴포넌트 문서 57개, 유틸리티 문서 4개의 원문 URL·속성 이름·타입·기본값·예제 이름을 기록했습니다. 상위 그룹과 V3/V4 및 Legacy 문서도 유지합니다. 파운데이션의 기본 팔레트와 타이포그래피 수치는 원문을 따르고, Primary와 시맨틱 컬러는 제주여라 기준입니다.
+`catalog.json`에는 파운데이션 6개, 컴포넌트 문서 73개, 유틸리티 문서 4개의 ID·이름·분류·그룹과 예제 정보를 기록했습니다.
 
-문서의 **원문 API 레퍼런스**는 참고 정보입니다. 이 개발 키트는 `@toss/tds-mobile`의 소스나 패키지를 포함하지 않고, TDS React API와 드롭인 호환되지 않습니다. 모든 원문 예제·Lottie·앱브릿지·영상·네이티브 보안 입력 로직까지 구현한 것은 아닙니다. Full Secure Keypad는 마스킹된 UI 예제로, 실제 보안 입력에 사용하지 마세요.
-
-참조: https://tossmini-docs.toss.im/tds-mobile/
-
-보강 참고: https://designsystem.line.me/LDSG/foundation/overview-en/
-
-두 가이드 모두 2026-11-18 확인. LINE의 시각 스타일 대신 제주여라의 보라색·다크 기본 테마·8px 간격·16/24px radius를 적용했습니다.
+Full Secure Keypad는 마스킹된 UI 예제로, 실제 보안 입력에 사용하지 마세요.
 
 © Plander Designer ASEUL
