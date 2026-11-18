@@ -4,3 +4,4 @@ __pycache__/
 
 # ChatGPT Sites project identity is local to its original deployment.
 .openai/
+.vercel
