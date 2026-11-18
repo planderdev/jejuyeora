@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+__pycache__/
+
+# ChatGPT Sites project identity is local to its original deployment.
+.openai/

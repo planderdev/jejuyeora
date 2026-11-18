@@ -1,0 +1,4 @@
+Vector examples: original Jejuyeora demo illustrations.
+Avatar symbol: Lucide user-round, ISC.
+flower.mp4: MDN interactive-examples, CC0 video sample.
+Source: https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4
