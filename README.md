@@ -112,7 +112,7 @@ useSnackbar('저장했어요', {
 openDrawer({ lang: 'ko', profile: true });
 ```
 
-비디오 플레이어는 Lucide 컨트롤과 HTML5 `<video>`를 사용합니다. 예제 영상은 MDN의 CC0 flower.mp4이며 출처는 `media/MEDIA-CREDITS.txt`에 있습니다. 재생·탐색·음소거·자막과 Fullscreen API를 제공합니다. 플랫폼이 Fullscreen API를 제한하면 해당 앱의 네이티브 전체 화면 처리로 연결하세요.
+비디오 플레이어는 Lucide 컨트롤과 HTML5 `<video>`를 사용합니다. 재생·탐색·음소거·자막과 Fullscreen API를 제공합니다. 플랫폼이 Fullscreen API를 제한하면 해당 앱의 네이티브 전체 화면 처리로 연결하세요.
 
 ## 포함 범위
 
