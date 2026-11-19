@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko" data-theme="dark" data-ui="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#161525">
+<meta name="description" content="제주여라 입점 제안서 — 4개 언어 소개, 예약 신청, 로컬상품 판매까지 제주여라가 함께합니다.">
+<title>제주여라 입점 제안서</title>
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="./proposal.css">
+<script>if(new URLSearchParams(location.search).has('static'))document.documentElement.classList.add('static')</script>
+</head>
+<body>
+
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+<nav class="dots" id="dots" aria-label="슬라이드 이동"></nav>
+<div class="pager">
+  <span class="count"><b id="cur">01</b> / <span id="total">11</span></span>
+  <button type="button" id="prev" aria-label="이전 슬라이드"><svg viewBox="0 0 24 24"><path d="m18 15-6-6-6 6"/></svg></button>
+  <button type="button" id="next" aria-label="다음 슬라이드"><svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg></button>
+</div>
+
+<main id="deck">
+
+<!-- 01 표지 -->
+<section class="slide hero" data-ui="dark" aria-label="표지">
+  <div class="orb o1"></div><div class="orb o2"></div><div class="grid-bg"></div>
+  <div class="stage split">
+    <div class="col text">
+      <div class="logo rv" role="img" aria-label="JeJuyeora"></div>
+      <p class="eyebrow rv" style="--i:1">입점 제안서</p>
+      <h1 class="h1">
+        <span class="ln"><span style="--i:2">외국인 손님이</span></span>
+        <span class="ln"><span style="--i:3">사장님 가게를</span></span>
+        <span class="ln"><span class="shine" style="--i:4">먼저 찾아오게</span></span>
+      </h1>
+      <p class="lead rv" style="--i:6">4개 언어 소개 · 예약 신청 · 로컬상품 판매까지, <br>제주여라가 함께합니다.</p>
+      <ul class="chips rv" style="--i:7">
+        <li>한국어</li><li>English</li><li>中文(简体)</li><li>日本語</li>
+      </ul>
+    </div>
+    <div class="col phones two">
+      <div class="float f1"><figure class="phone rv rv-up" style="--i:4"><img src="./assets/home-detail.jpg" alt="가게 상세 화면: 남경어곰탕 제주공항본점, 영업시간·알레르기 정보·대표 메뉴와 예약하기 버튼"></figure></div>
+      <div class="float f2"><figure class="phone rv rv-up" style="--i:6"><img src="./assets/home-shop.jpg" alt="로컬상품 화면: 제주를 담은 로컬상품 목록과 수령 방법"></figure></div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 손님 -->
+<section class="slide" data-theme="light" data-ui="light" aria-label="제주여라를 쓰는 손님">
+  <div class="orb o3"></div>
+  <div class="stage split">
+    <div class="col text wide">
+      <p class="eyebrow rv">제주여라를 쓰는 손님</p>
+      <h2 class="h2 rv" style="--i:1">시장검증에 참여한 관광객 521명 중 <br><em>505명</em>이 외국어로 답했습니다</h2>
+      <div class="bars">
+        <div class="bar-row rv" style="--i:3"><span class="bar-label">중국어</span><span class="bar-track"><i class="bar b1" style="--w:100%"></i></span><span class="bar-val"><b data-count="305">305</b>명</span></div>
+        <div class="bar-row rv" style="--i:4"><span class="bar-label">영어</span><span class="bar-track"><i class="bar b2" style="--w:38.36%"></i></span><span class="bar-val"><b data-count="117">117</b>명</span></div>
+        <div class="bar-row rv" style="--i:5"><span class="bar-label">일본어</span><span class="bar-track"><i class="bar b3" style="--w:27.21%"></i></span><span class="bar-val"><b data-count="83">83</b>명</span></div>
+        <div class="bar-row rv" style="--i:6"><span class="bar-label">한국어</span><span class="bar-track"><i class="bar b4" style="--w:5.25%"></i></span><span class="bar-val"><b data-count="16">16</b>명</span></div>
+      </div>
+      <p class="source rv" style="--i:8">출처: 제주여라 시장검증 관광객 설문(2026.10.12–11.02), 결과보고서 2026.11.03</p>
+    </div>
+    <div class="col ring-wrap rv rv-scale" style="--i:4">
+      <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="ring-bg" cx="60" cy="60" r="54"/>
+        <circle class="ring-fg" cx="60" cy="60" r="54"/>
+      </svg>
+      <div class="ring-text">
+        <span class="ring-cap">외국어 응답</span>
+        <strong><b data-count="505">505</b><small>명</small></strong>
+        <span class="ring-sub">관광객 521명 중</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 결제 -->
+<section class="slide" data-ui="dark" aria-label="결제">
+  <div class="orb o2"></div>
+  <div class="stage split">
+    <div class="col text wide">
+      <p class="eyebrow rv">결제</p>
+      <h2 class="h2 rv" style="--i:1">중국 손님은 <br><em>WeChat Pay</em>로 바로 결제합니다</h2>
+      <ul class="chips big rv" style="--i:2"><li class="on">WeChat Pay · 微信支付</li><li>계좌 입금</li></ul>
+      <ul class="points">
+        <li class="rv rv-left" style="--i:3"><h3>평소 쓰던 결제 그대로</h3><p>시장검증 관광객 521명 중 305명이 중국어 사용자였습니다. 익숙한 微信支付로 주문이 바로 끝납니다.</p></li>
+        <li class="rv rv-left" style="--i:4"><h3>입금 확인을 기다리지 않아요</h3><p>결제가 끝나면 주문이 바로 확정되고, 전달 약속으로 넘어갑니다.</p></li>
+        <li class="rv rv-left" style="--i:5"><h3>다른 손님은 계좌 입금</h3><p>해외 카드 결제는 준비 중입니다.</p></li>
+      </ul>
+    </div>
+    <div class="col phones one">
+      <div class="float f1"><figure class="phone rv rv-up" style="--i:3"><img src="./assets/pay.jpg" alt="수령 방법·결제 화면: 공항 수령 선택, WeChat Pay 결제 선택, 합계 14,000원"></figure></div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 고민 -->
+<section class="slide" data-ui="dark" aria-label="사장님의 고민">
+  <div class="orb o1"></div>
+  <div class="stage stack">
+    <p class="eyebrow rv">사장님의 고민</p>
+    <h2 class="h2 rv" style="--i:1">외국인 손님, 반갑지만 <br>응대가 어렵습니다</h2>
+    <div class="cards c3">
+      <article class="card rv" style="--i:3">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg></span>
+        <span class="tag">소개</span>
+        <h3>메뉴·상품 설명을 외국어로 하기 어렵다</h3>
+        <p>좋은 가게인데, 손님이 무엇을 파는지 알기 어렵습니다.</p>
+      </article>
+      <article class="card rv" style="--i:4">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span>
+        <span class="tag">예약</span>
+        <h3>외국어 예약 문의를 받기 어렵다</h3>
+        <p>전화·메신저 문의는 놓치기 쉽고, 노쇼 걱정도 있습니다.</p>
+      </article>
+      <article class="card rv" style="--i:5">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+        <span class="tag">판매</span>
+        <h3>짐 때문에 사지 않고 지나친다</h3>
+        <p>여행객은 무거운 기념품 구매를 망설입니다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 05 하는 일 -->
+<section class="slide" data-ui="dark" aria-label="제주여라가 하는 일">
+  <div class="orb o2"></div>
+  <div class="stage stack">
+    <p class="eyebrow rv">제주여라가 하는 일</p>
+    <h2 class="h2 rv" style="--i:1">소개부터 예약·판매·전달까지</h2>
+    <div class="cards c2">
+      <article class="card row rv" style="--i:3">
+        <span class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
+        <div><h3>4개 언어 가게·상품 소개</h3><p>한국어·English·中文(简体)·日本語. 상호명·가격·알레르기 정보는 원문 그대로 보여 줍니다.</p></div>
+      </article>
+      <article class="card row rv" style="--i:4">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"/></svg></span>
+        <div><h3>피드·크리에이터 노출</h3><p>제주여라 카드뉴스와 한·중·일 크리에이터 콘텐츠에서 가게로 바로 이어집니다.</p></div>
+      </article>
+      <article class="card row rv" style="--i:5">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg></span>
+        <div><h3>예약·대기 신청 접수</h3><p>손님이 앱에서 신청하면 가맹점 웹에서 확인하고 확정합니다. 요청 사항은 원문과 번역으로 전달됩니다.</p></div>
+      </article>
+      <article class="card row rv" style="--i:6">
+        <span class="ico"><svg viewBox="0 0 24 24"><path d="m7.5 4.27 9 5.15"/><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span>
+        <div><h3>로컬상품 판매·직접 전달</h3><p>손님은 WeChat Pay로 바로 결제하고, 공항·크루즈터미널 전달은 제주여라 담당자가 직접 합니다.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 06 손님 화면 -->
+<section class="slide" data-theme="light" data-ui="light" aria-label="손님이 보는 화면">
+  <div class="orb o3"></div>
+  <div class="stage split">
+    <div class="col text narrow">
+      <p class="eyebrow rv">손님이 보는 화면</p>
+      <h2 class="h2 rv" style="--i:1">발견하고, <br>가게를 보고, <br><em>바로 예약합니다</em></h2>
+      <p class="lead rv" style="--i:2">피드에서 본 가게의 장소 카드를 누르면 상세 화면으로, 거기서 예약·대기 신청까지 한 번에 이어집니다.</p>
+    </div>
+    <div class="col flow">
+      <div class="flow-item rv rv-up" style="--i:3"><figure class="phone sm"><img src="./assets/flow-feed.jpg" alt="피드 화면: 제주여라 카드뉴스 게시물"></figure><span class="step"><b>1</b>피드에서 발견</span></div>
+      <svg class="flow-arrow rv" style="--i:5" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      <div class="flow-item rv rv-up" style="--i:6"><figure class="phone sm"><img src="./assets/flow-detail.jpg" alt="가게 상세 화면: 위치, 영업시간, 대표 메뉴"></figure><span class="step"><b>2</b>가게 상세 보기</span></div>
+      <svg class="flow-arrow rv" style="--i:8" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      <div class="flow-item rv rv-up" style="--i:9"><figure class="phone sm"><img src="./assets/flow-done.jpg" alt="예약 신청 접수 완료 화면"></figure><span class="step"><b>3</b>예약 신청 접수</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 로컬상품 -->
+<section class="slide" data-ui="dark" aria-label="로컬상품 판매">
+  <div class="orb o1"></div>
+  <div class="stage split rev">
+    <div class="col phones two">
+      <div class="float f1"><figure class="phone rv rv-up" style="--i:1"><img src="./assets/shop-product.jpg" alt="상품 상세 화면: 제주를 담은 감귤칩 14,000원, 주문하기 버튼"></figure></div>
+      <div class="float f2"><figure class="phone rv rv-up" style="--i:3"><img src="./assets/shop-done.jpg" alt="주문 완료 화면: WeChat Pay 결제 완료, 공항 수령 안내"></figure></div>
+    </div>
+    <div class="col text wide">
+      <p class="eyebrow rv">로컬상품 판매</p>
+      <h2 class="h2 rv" style="--i:1">사장님은 상품만, <br><em>전달은 제주여라가</em></h2>
+      <ol class="timeline">
+        <li class="rv rv-left" style="--i:3"><span class="num">1</span><div><h3>손님 주문</h3><p>여행 중 앱에서 주문하고, 공항·크루즈·매장 수령 중 고릅니다.</p></div></li>
+        <li class="rv rv-left" style="--i:5"><span class="num">2</span><div><h3>WeChat Pay 결제</h3><p>微信支付로 바로 결제 끝. 계좌 입금도 받습니다.</p></div></li>
+        <li class="rv rv-left" style="--i:7"><span class="num">3</span><div><h3>직접 전달</h3><p>제주여라 담당자가 손님과 약속을 잡아 공항·크루즈터미널에서 전해 드립니다.</p></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 08 성과 -->
+<section class="slide" data-theme="light" data-ui="light" aria-label="먼저 함께한 가게들">
+  <div class="orb o3"></div>
+  <div class="stage stack">
+    <p class="eyebrow rv">먼저 함께한 가게들</p>
+    <h2 class="h2 rv" style="--i:1">시장검증에 참여한 소상공인 <em>160곳</em></h2>
+    <div class="cards c4 stats">
+      <article class="card stat rv" style="--i:3"><strong><b data-count="126">126</b><small>곳</small></strong><p>주문이 발생한 가게</p><span class="meter"><i style="--w:78.75%"></i></span></article>
+      <article class="card stat rv" style="--i:4"><strong><b data-count="109">109</b><small>곳</small></strong><p>픽업까지 완료된 주문이 있는 가게</p><span class="meter"><i style="--w:68.125%"></i></span></article>
+      <article class="card stat rv" style="--i:5"><strong><b data-count="83">83</b><small>곳</small></strong><p>외국인 매출이 늘었다고 응답 <br>(줄었다는 응답 2곳)</p><span class="meter"><i style="--w:51.875%"></i></span></article>
+      <article class="card stat hl rv" style="--i:6"><strong><b data-count="66.2" data-dec="1">66.2</b><small>%</small></strong><p>정식 참여 의향 (106곳)</p><span class="meter"><i style="--w:66.2%"></i></span></article>
+    </div>
+    <p class="source rv" style="--i:8">출처: 제주여라 시장검증 소상공인 설문(2026.10.12–11.02), 결과보고서 2026.11.03</p>
+  </div>
+</section>
+
+<!-- 09 조건 -->
+<section class="slide brand" data-ui="brand" aria-label="입점 조건">
+  <div class="rings" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="stage stack center">
+    <p class="eyebrow rv">입점 조건</p>
+    <h2 class="mega rv" style="--i:1" aria-label="입점 수수료 0원">
+      <span aria-hidden="true">입점 수수료 <span class="roll"><span class="roll-col"><i>9</i><i>7</i><i>5</i><i>3</i><i>1</i><i>0</i></span></span>원</span>
+    </h2>
+    <p class="lead rv" style="--i:4">자세한 조건은 입점 상담에서 안내드립니다.</p>
+  </div>
+</section>
+
+<!-- 10 절차 -->
+<section class="slide" data-ui="dark" aria-label="입점 절차">
+  <div class="orb o2"></div>
+  <div class="stage stack">
+    <p class="eyebrow rv">입점 절차</p>
+    <h2 class="h2 rv" style="--i:1">네 단계면 손님을 맞을 준비가 끝납니다</h2>
+    <div class="steps">
+      <span class="steps-line" aria-hidden="true"><i></i></span>
+      <article class="stepc rv" style="--i:3"><span class="no">01</span><div class="card"><h3>입점 상담</h3><p>가게와 판매 상품, 예약 방식을 함께 정합니다.</p></div></article>
+      <article class="stepc rv" style="--i:6"><span class="no">02</span><div class="card"><h3>정보 전달</h3><p>대표 메뉴·상품 사진, 가격, 영업시간, 알레르기 정보를 보내 주세요.</p></div></article>
+      <article class="stepc rv" style="--i:9"><span class="no">03</span><div class="card"><h3>4개 언어 등록</h3><p>제주여라가 가게·상품 소개를 4개 언어로 등록합니다.</p></div></article>
+      <article class="stepc rv" style="--i:12"><span class="no">04</span><div class="card"><h3>노출·접수 시작</h3><p>앱 노출을 시작하고, 예약·주문은 가맹점 웹에서 확인합니다.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 11 마무리 -->
+<section class="slide hero end" data-ui="dark" aria-label="입점 문의">
+  <div class="orb o1"></div><div class="orb o2"></div><div class="grid-bg"></div>
+  <div class="stage split">
+    <div class="col text">
+    <div class="logo lg rv" role="img" aria-label="JeJuyeora"></div>
+    <h2 class="h1">
+      <span class="ln"><span style="--i:2">함께 외국인 손님을</span></span>
+      <span class="ln"><span class="shine" style="--i:3">맞이해요</span></span>
+    </h2>
+    <dl class="contact rv" style="--i:6">
+      <div><dt>운영</dt><dd>주식회사 업토너</dd></div>
+      <div><dt>입점 문의</dt><dd>[담당자 · 전화 · 이메일]</dd></div>
+    </dl>
+    </div>
+    <div class="col phones fan" aria-hidden="true">
+      <div class="float"><figure class="phone sm rv rv-up" style="--i:5"><img src="./assets/flow-feed.jpg" alt=""></figure></div>
+      <div class="float"><figure class="phone rv rv-up" style="--i:3"><img src="./assets/home-detail.jpg" alt=""></figure></div>
+      <div class="float f2"><figure class="phone rv rv-up" style="--i:7"><img src="./assets/shop-product.jpg" alt=""></figure></div>
+    </div>
+  </div>
+</section>
+
+</main>
+<script src="./proposal.js"></script>
+</body>
+</html>

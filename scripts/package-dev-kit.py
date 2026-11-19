@@ -6,7 +6,7 @@ root = Path(__file__).resolve().parent.parent
 target = root / 'dist' / 'jejuyeora-dev-kit.zip'
 files = [root / 'README.md', root / 'package.json']
 files += list((root / 'scripts').glob('*'))
-files += [p for p in (root / 'dist').rglob('*') if p.is_file() and p.suffix != '.zip']
+files += [p for p in (root / 'dist').rglob('*') if p.is_file() and p.suffix != '.zip' and 'proposal' not in p.relative_to(root / 'dist').parts]
 with ZipFile(target, 'w', ZIP_DEFLATED, compresslevel=6) as archive:
     for path in sorted(files):
         if path.is_file():
